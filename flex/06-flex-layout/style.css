@@ -24,3 +24,55 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* SOLUTION */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 16px;
+}
+
+/* Remove list bullets */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+ul, li {
+  list-style: none;
+  padding-left: 0; /* Optional: remove default padding */
+  margin: 0; /* Optional: remove default margin */
+  padding: 0;
+}
+
+/* Remove link styling */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherits color from parent element */
+}
+
+.content {
+  flex: 1; /* Ensures the content area takes up the available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #eee;
+}
