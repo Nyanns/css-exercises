@@ -1,26 +1,74 @@
-body {
-  font-family: 'Courier New', Courier, monospace;
-}
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 52px 52px;
+      /* Adjust padding to ensure content is not covered by the fixed footer */
+    }
 
-img {
-  width: 100px;
-  height: 100px;
-}
+    img {
+      width: 100px;
+      height: 100px;
+    }
 
-.title {
-  font-size: 36px;
-  font-weight: 900;
-}
+    .title {
+      font-size: 36px;
+      font-weight: 900;
+    }
 
-/* do not edit this footer */
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eee;
-}
+    /* do not edit this footer */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eee;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 52px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .content-1,
+    .content-2,
+    .content-3,
+    .content-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      max-width: 200px;
+      word-wrap: break-word;
+      /* Allow text to wrap within the content boxes */
+      word-break: break-word;
+      /* Ensure words break to the next line if necessary */
+      text-align: center;
+    }
+
+    .content-1 {
+      background-color: aqua;
+    }
+
+    .content-2 {
+      background-color: chartreuse;
+    }
+
+    .content-3 {
+      background-color: steelblue;
+    }
+
+    .content-4 {
+      background-color: tomato;
+    }
